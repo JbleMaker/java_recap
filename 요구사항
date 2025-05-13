@@ -1,0 +1,18 @@
+entity 패키지를 만들고 User클래스를 정의.
+User 클래스의 속성은 아래와 같다.
+username, password, name, email, phone, address, age, roles("ROLE_USER", "ROLE_ADMIN")
+각각의 변수명을 보고 자료형을 생각하여 정의해본다.
+
+User 클래스는 AllArgsConstructor와 NoArgsConstructor를 가진다.
+Getter, Setter, toString도 가진다. (롬복 또는 자동완성 사용 금지)
+
+
+service 패키지를 만들고 UserService 클래스를 정의한다.
+UserService 클래스는 싱글톤으로 만든다.
+UserService의 기능은 아래와 같다.
+
+register 메소드를 정의하고 매개변수로 User클래스의 모든 속성값을 전달받아
+UserService의 속성인 userList에 추가할 수 있다.
+이 때 username이 중복이면 추가할 수 없다.
+printAll 메소드를 정의하고 모든 사용자 정보를 출력한다.
+printByUsername 메소드를 정의하고 해당 username의 사용자 정보를 출력한다.
